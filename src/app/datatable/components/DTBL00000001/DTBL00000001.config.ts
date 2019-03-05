@@ -1,5 +1,6 @@
 
 export default {
+  label: 'User Details',
   dtOptions: {
     pagingType: "full_numbers",
     pageLength: 10,

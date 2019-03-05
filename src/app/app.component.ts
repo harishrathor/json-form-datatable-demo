@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import FRM0000001Definition from './FRM0000001.definition';
 import FRM0000002Definition from './FRM0000002.definition';
 
@@ -39,4 +39,5 @@ export class AppComponent  {
 			console.log(error);
 		}
 	}
+
 }

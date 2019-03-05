@@ -2,6 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { OnInit, Injectable, Input, ViewChild, AfterViewInit } from "@angular/core";
 import { DataTableDirective } from 'angular-datatables';
 
+
 @Injectable()
 export class BaseDataTableComponent implements OnInit, AfterViewInit {
 
@@ -22,6 +23,7 @@ export class BaseDataTableComponent implements OnInit, AfterViewInit {
     public isCollapsed: boolean;
     public instance: any;
     public currentData: any;
+    public showDataTable: boolean;
 
     constructor(protected _http: HttpClient) {
         this.initialize();
@@ -31,6 +33,7 @@ export class BaseDataTableComponent implements OnInit, AfterViewInit {
         try {
             this.instance = this;
             this.isCollapsed = false;
+            this.showDataTable = false;
         } catch (error) {
             console.log(error);
         }
@@ -90,7 +93,14 @@ export class BaseDataTableComponent implements OnInit, AfterViewInit {
     }
 
     protected _afterInit() {
-
+      try {
+       // $(`#` + this.code).DataTable(this.config);
+       setTimeout(() => {
+         this.showDataTable = true;
+       }, 10000);
+      } catch(e) {
+        console.log(e);
+      }
     }
 
     public dataCallback = (dataTablesParameters: any, callback) => {
@@ -118,10 +128,6 @@ export class BaseDataTableComponent implements OnInit, AfterViewInit {
         return this.code;
     }
 
-    get label() {
-        return `Data Table for ${this.code}`;
-    }
-
     get config() {
         return null;
     }
@@ -140,5 +146,9 @@ export class BaseDataTableComponent implements OnInit, AfterViewInit {
 
     set url(url) {
         this._url = url;
+    }
+
+    get label() {
+      return this.config.label || '';
     }
 }
