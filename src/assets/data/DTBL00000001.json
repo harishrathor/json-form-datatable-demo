@@ -1,0 +1,84 @@
+{
+   "recordsTotal": 6,
+   "recordsFiltered": 6,
+    "pageLength": 10,
+  "data": [
+    {
+      "id": 860,
+      "firstName": "Pritesh",
+      "lastName": "kumar",
+      "email": "pritesh@gmail.com",
+      "phone": 8907654321,
+      "dob": "13-Mar-1994",
+      "country": "India",
+      "state": "Uttarakhand",
+      "city": "Pantnagar",
+      "locality": "Shivnagar",
+      "pin": 321234 
+
+    },
+    {
+      "id": 870,
+      "firstName": "Satish",
+      "lastName": "Gupta",
+      "email": "satish@gmail.com",
+      "phone": 9907654321,
+      "dob": "13-Dec-1995",
+      "country": "India",
+      "state": "Uttar Pradesh",
+      "city": "Gaziabad",
+      "locality": "Rampura",
+      "pin": 673241
+    },
+    {
+      "id": 590,
+      "firstName": "Mahipal",
+      "lastName": "Rawat",
+      "email": "mahipal@gmail.com",
+      "phone": 9107654321,
+      "dob": "23-Apr-1995",
+      "country": "India",
+      "state": "Haryana",
+      "city": "Gurugram",
+      "locality": "Sector 45",
+      "pin": 1220015
+    },
+    {
+      "id": 860,
+      "firstName": "Abhishek",
+      "lastName": "Bhalotia",
+      "email": "abhishek@gmail.com",
+      "phone": 6712345890,
+      "dob": "15-Dec-1993",
+      "country": "India",
+      "state": "Delhi",
+      "city": "Rohini",
+      "locality": "Spaze Apartments",
+      "pin": 666098
+    }, {
+      "id": 870,
+      "firstName": "Manisha ",
+      "lastName": "Agarwal",
+      "email": "manisha@gmail.com",
+      "phone": 7342671809,
+      "dob": "18-Dec-1995",
+      "country": "India",
+      "state": "Rajasthan",
+      "city": "Jaipur",
+      "locality": "Green Colony",
+      "pin": 342513
+    }, {
+      "id": 590,
+      "firstName": "Purva",
+      "lastName": "Gehlot",
+      "email": "purva@gmail.com",
+      "phone": 6523417890,
+      "dob": "1-Sep-1993",
+      "country": "India",
+      "state": "Madhya Pradesh",
+      "city": "Bhopal",
+      "locality": "Rajendra Colony",
+      "pin": 342156
+    }
+  ]
+}
