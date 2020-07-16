@@ -35,7 +35,7 @@
     "jquery": "3.3.1",
     "json-form-generator": "1.0.7",
     "jszip": "3.2.0",
-    "lodash": "4.17.11",
+    "lodash": "4.17.19",
     "ngx-bootstrap": "3.3.0",
     "ngx-custom-validators": "7.0.0",
     "ngx-quill": "4.6.12",
